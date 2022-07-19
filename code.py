@@ -16,18 +16,18 @@ def calc(x, operand):
             string += " "
 
         if i == 0:
-            result = a
+            res= a
         else:
             if x == "*":
-                result *= a
+                res *= a
             elif x == ":":
-                result /= a
+                res /= a
             elif x == "+":
-                result += a
+                res += a
             else:
-                result -= a
+                res -= a
 
-    print(string, result)
+    print(string, res)
 
 
 def check(x):
@@ -40,5 +40,6 @@ def check(x):
 
 x = input("Выберите операцию: ")
 check(x)
+
 operand = int(input("Сколько операндов? "))
 calc(x, operand)

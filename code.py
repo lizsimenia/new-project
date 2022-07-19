@@ -33,7 +33,7 @@ def calc(x, operand):
 def check(x):
     while True:
         if (x != "*" and x != "+" and x != "-" and x != ":"):
-            x = input("Выберите корректную операцию: ")
+            x = input("Введите корректную операцию (*, :, +, -): ")
         else:
             break
 

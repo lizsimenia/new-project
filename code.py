@@ -16,29 +16,33 @@ def calc(x, operand):
             string += " "
 
         if i == 0:
-            result = a
+            res= a
         else:
             if x == "*":
-                result *= a
+                res *= a
             elif x == ":":
-                result /= a
+                res /= a
             elif x == "+":
-                result += a
+                res += a
             else:
-                result -= a
+                res -= a
 
-    print(string, result)
+    print(string, res)
 
 
 def check(x):
     while True:
         if (x != "*" and x != "+" and x != "-" and x != ":"):
-            x = input("Выберите корректную операцию: ")
+            x = input("Введите корректную операцию (*, :, +, -): ")
         else:
             break
 
 operation = input("Введите операцию: ")
 check(operation)
+
+x = input("Выберите операцию: ")
+check(x)
+
 
 operand = int(input("Сколько операндов? "))
 calc(operation, operand)

@@ -37,8 +37,8 @@ def check(x):
         else:
             break
 
-
-operation = input("Выберите операцию: ")
+operation = input("Введите операцию: ")
 check(operation)
+
 operand = int(input("Сколько операндов? "))
 calc(operation, operand)

@@ -2,8 +2,7 @@ def calc(x, operand):
     string = ""
 
     for i in range(operand):
-        print("Введите операнд",
-              i + 1, end=": ")
+        print("Введите операнд", i + 1, end=": ")
         a = int(input())
 
         string += str(a)
@@ -15,8 +14,7 @@ def calc(x, operand):
             string += x
             string += " "
 
-        if i == 0:
-            res= a
+        if i == 0: res = a
         else:
             if x == "*":
                 res *= a

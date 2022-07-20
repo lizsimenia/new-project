@@ -24,7 +24,6 @@ def calc(x, operand):
 
     print(string, res)
 
-#Проверка ввода.
 def check(x):
     while True:
         if (x != "*" and x != "+" and x != "-" and x != ":"):

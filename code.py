@@ -16,14 +16,10 @@ def calc(x, operand):
 
         if i == 0: res = a
         else:
-            if x == "*":
-                res *= a
-            elif x == ":":
-                res /= a
-            elif x == "+":
-                res += a
-            else:
-                res -= a
+            if x == "*": res *= a
+            elif x == ":": res /= a
+            elif x == "+": res += a
+            else: res -= a
 
     print(string, res)
 
